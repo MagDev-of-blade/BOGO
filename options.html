@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <!-- link rel="stylesheet" type="text/css" href="option.css" -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+        <!-- BootstrapのCSS読み込み -->
+        <link href="bootstrap.min.css" rel="stylesheet">
+        <!-- jQuery読み込み -->
+        <script src="jquery.js"></script>
+        <!-- BootstrapのJS読み込み -->
+        <script src="bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="option.css">
+    </head>
+    <body style="padding: 20px; background-color: #fff;">
+        <div class="container rounded bg-light">
+            <!-- <div class="row sub_title rounded">
+                基本情報
+            </div> -->
+            <div class="row liner">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2 textColorWhite">name(ローマ字、名前と名字の間に半角)</div>
+                <input type="text" id="name" class="col-sm-4" placeholder="your name" autocomplete="off">
+                <!-- <div class="col-sm-5 textColorWhite">※ローマ字入力・名前と苗字の間に半角スペース必須</div> -->
+            </div>
+            
+            <div class="row liner">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2 textColorWhite">e-mail</div>
+                <input type="email" id="email" class="col-sm-4" placeholder="email" autocomplete="off">
+            </div>
+            <div class="row liner">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2 textColorWhite">tel</div>
+                <input type="tel" id="tel" class="col-sm-4" placeholder="mobile phone" autocomplete="off">
+            </div>
+            <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2 textColorWhite">area</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-1"></div>
+                <label class="col-sm-2 textColorWhite"><input type="radio" name="location" value="area_tokyo" id="tokyo">tokyo</label>
+                <div class="col-sm-1"></div>
+                <label class="col-sm-2 textColorWhite"><input type="radio" name="location" value="area_osaka" id="osaka">osaka</label>
+            </div>
+            <div class="row liner">
+                <div class="col-sm-1"></div>
+                <label class="col-sm-2 textColorWhite"><input type="radio" name="location" value="area_nagoya" id="nagoya">nagoya</label>
+                <div class="col-sm-1"></div>
+                <label class="col-sm-2 textColorWhite"><input type="radio" name="location" value="area_fukuoka" id="fukuoka">fukuoka</label>
+            </div>
+            
+            <!-- <div class="row sub_title rounded">
+                Webhook
+            </div> -->
+            <div class="row liner">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2 textColorWhite">webhook url</div>
+                <input type="text" id="private_webhook_url" class="col-sm-4" placeholder="https://discordapp.com/api/webhooks/..." autocomplete="off">
+                <div class="col-sm-1"></div>
+                <button id="test_webhook_button" class="col-sm-2 btn btn-warning">TEST</button>
+            </div>
+            
+            <!-- <div class="row sub_title rounded">
+                遅延情報
+            </div> -->
+            <div class="row liner">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2 textColorWhite">reload interval(ms)</div>
+                <input type="number" id="update_delay" class="col-sm-4" placeholder="0">
+                <!-- <div class="col-sm-5 textColorWhite">ミリ秒(1000ミリ秒=1秒)</div> -->
+            </div>
+            <div class="row liner">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2 textColorWhite">submit delay(ms)</div>
+                <input type="number" id="send_delay" class="col-sm-4" placeholder="0">
+                <!-- <div class="col-sm-5 textColorWhite">ミリ秒(1000ミリ秒=1秒)</div> -->
+            </div>
+            <div class="row liner">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2 textColorWhite">forced reload(ms)</div>
+                <input type="number" id="forced_reload" class="col-sm-4" placeholder="0">
+                <!-- <div class="col-sm-5 textColorWhite">ミリ秒(1000ミリ秒=1秒)</div> -->
+            </div>
+            
+            <!-- <div class="row sub_title rounded">
+                タイマー
+            </div> -->
+            <div class="row liner">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2 textColorWhite">start time</div>
+                <input type="date" id="start_date" class="col-sm-2">
+                <input type="tel" id="start_time" class="col-sm-2" placeholder="00:00:00" value="00:00:00" />
+            </div>
+            
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <button id="save_button" class="col-sm-8 btn btn-danger">Save</button>
+                <div class="col-sm-1"></div>
+                <div id="status" class="textColorWhite"></div>
+            </div>
+        </div>
+        <script src="options.js"></script>
+    </body>
+</html>

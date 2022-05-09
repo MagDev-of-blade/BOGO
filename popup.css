@@ -1,0 +1,66 @@
+body{
+    width: 800px;
+    text-align: center;
+    background-color: #fff;
+    padding: 5px;
+}
+
+table{
+    border: solid;
+}
+
+.row{
+    margin: 10px 0px;
+}
+
+.liner {
+    border-bottom: solid 1px #888;
+}
+
+.sub_title{
+    color: #000;
+    background-color: #aaa;
+    margin: 0px -5px;
+    padding-left: 10px;
+    font-size: 120%;
+}
+
+.subContainer {
+    padding: 0px 5px 5px 5px;
+}
+
+.textColorWhite {
+    color: #000;
+}
+
+.btn-narrow {
+    height: 100%;
+    margin-top: 1px;
+    margin-right: 5px; 
+    padding: 0px;
+}
+
+.container {
+    background-color: #fff;
+}
+
+#login_form {
+    height: 120px;
+    margin: 20px 0px;
+}
+
+#main_contents {
+    height: 360px;
+}
+
+#log {
+    height: 100px;
+    overflow: scroll;
+    margin: 5px 0px 0px 0px;
+    box-shadow: inset -3px -3px 3px #aaa;
+}
+
+.hide
+{
+    display: none;
+}

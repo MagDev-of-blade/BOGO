@@ -1,0 +1,29 @@
+.row{
+    margin: 10px 0px;
+}
+
+.liner {
+    border-bottom: solid 1px #ccc;
+}
+
+.sub_title
+{
+    color: #000;
+    background-color: #aaa;
+    margin: 0px -15px;
+    padding-left: 10px;
+    font-size: 120%;
+}
+
+.textColorWhite {
+    color: #000;
+}
+
+.container{
+    padding-bottom: 5px;
+}
+
+.hide
+{
+    display: none;
+}

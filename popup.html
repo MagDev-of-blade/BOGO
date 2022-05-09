@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <!-- link rel="stylesheet" type="text/css" href="option.css" -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bocopreme Raffle</title>
+    <!-- BootstrapのCSS読み込み -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery読み込み -->
+    <script src="jquery.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+
+<body style="background-color: #fff;">
+<div class="container">
+    <h2 class="textColorWhite">Bocopreme Raffle</h2>
+    <div class="liner"></div>
+    
+    <div id="main_contents" style="display: none;">
+        <!-- <div id="tabs" class="row">
+            <button id="btn_tab_main" class="btn btn-light col-6" style="color: #000;">Main</button>
+            <button id="btn_tab_profile" class="btn btn-outline-light col-6" style="color: #000;">Profile</button>
+        </div> -->
+        
+        <!-- <div id="tab_main" class="subContainer rounded bg-light"> -->
+            <!-- <div class="row sub_title rounded">Timer</div> -->
+            <div class="row liner">
+                <div class="col-6 textColorWhite">current time</div>
+                <div id="current-time" class="col-6 textColorWhite"></div>
+            </div>
+            <div class="row liner">
+                <div class="col-6 textColorWhite">start time</div>
+                <div id="start-time" class="col-6 textColorWhite"></div>
+            </div>
+            
+        <!-- </div> -->
+
+        <!-- <div id="tab_profile" class="subContainer rounded bg-light"> -->
+            <!-- <div class="row sub_title rounded">基本情報</div> -->
+            <div class="row liner">
+                <div class="col-6 textColorWhite">name</div>
+                <div id="name" class="col-6 textColorWhite"></div>
+            </div>
+            <div class="row liner">
+                <div class="col-6 textColorWhite">e-mail</div>
+                <div id="email" class="col-6 textColorWhite"></div>
+            </div>
+            <div class="row liner">
+                <div class="col-6 textColorWhite">tel</div>
+                <div id="tel" class="col-6 textColorWhite"></div>
+            </div>
+            <div class="row liner">
+                <div class="col-6 textColorWhite">area</div>
+                <div id="area" class="col-6 textColorWhite"></div>
+            </div>
+            
+            <!-- <div class="row sub_title rounded">遅延情報</div> -->
+            <div class="row liner">
+                <div class="col-6 textColorWhite">reload interval</div>
+                <div id="update_delay" class="col-6 textColorWhite"></div>
+            </div>
+            <div class="row liner">
+                <div class="col-6 textColorWhite">submit delay</div>
+                <div id="send_delay" class="col-6 textColorWhite"></div>
+            </div>
+            <div class="row liner">
+                <div class="col-6 textColorWhite">forced reload</div>
+                <div id="forced_reload" class="col-6 textColorWhite"></div>
+            </div>
+        <!-- </div> -->
+
+            <div class="row sub_title rounded" id="log_title">
+                Log
+                <div class="col-7"></div>
+                <button id="logCopy_btn" class="col-2 btn btn-info btn-narrow">ログコピー</button>
+                <button id="logClear_btn" class="col-2 btn btn-warning btn-narrow">ログ削除</button>
+            </div>
+            <p id="log" class="rounded bg-light border border-success"></p>
+            
+        
+            <div class="row" style="padding-bottom: 20px;">
+                <div class="col-1"></div>
+                <button id="start-btn" class="col-4 btn btn-warning">START</button>
+                <div class="col-2"></div>
+                <button id="stop-btn" class="col-4 btn btn-secondary">STOP</button>
+                <div class="col-1"></div>
+            </div>    
+    </div>
+        
+    <div id="login_form" style="display: none;">
+        <div class="row">
+            <div class="col-6 textColorWhite">e-mail</div>
+                <input type="text" id="login_email" class="col-6">
+        </div>
+        <div class="row">
+            <div class="col-6 textColorWhite">password</div>
+                <input type="text" id="login_password" class="col-6">
+        </div>
+        
+        <div class="row">
+            <button id="auth_btn" class="col-12 btn btn-primary">LOGIN</button>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="popup.js"></script>
+
+</body>
+</html>
